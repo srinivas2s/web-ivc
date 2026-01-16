@@ -20,34 +20,30 @@ export default function Home() {
 
       {/* Header with partner logos */}
       <header className="absolute top-0 left-0 right-0 z-10 p-6 pointer-events-none">
-        <div className="w-full flex justify-between items-start">
+        <div className="w-full flex justify-start items-start gap-4">
 
-          {/* VVCE Logo - Moves from Center to Left */}
-          <div className={`pointer-events-auto transition-all duration-[1500ms] ease-out ${mounted ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-[42vw] scale-150'}`}>
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#F4C430]/20 to-[#DAA520]/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-              <Image
-                src="/vvce-logo.png"
-                alt="VVCE Logo"
-                width={120}
-                height={120}
-                className="relative object-contain hover:scale-110 transition-transform duration-300 drop-shadow-lg"
-              />
-            </div>
+          {/* VVCE Logo */}
+          <div className="pointer-events-auto">
+            <Image
+              src="/vvce-logo.png"
+              alt="VVCE Logo"
+              width={120}
+              height={120}
+              priority
+              className="object-contain"
+            />
           </div>
 
-          {/* Inunity Logo - Moves from Center to Right */}
-          <div className={`pointer-events-auto transition-all duration-[1500ms] ease-out ${mounted ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-[42vw] scale-150'}`}>
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-bl from-[#F4C430]/20 to-[#DAA520]/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-              <Image
-                src="/inunity-logo.png"
-                alt="Inunity Logo"
-                width={160}
-                height={60}
-                className="relative object-contain hover:scale-110 transition-transform duration-300 drop-shadow-lg"
-              />
-            </div>
+          {/* Inunity Logo */}
+          <div className="pointer-events-auto">
+            <Image
+              src="/inunity-logo.png"
+              alt="Inunity Logo"
+              width={200}
+              height={80}
+              priority
+              className="object-contain"
+            />
           </div>
 
         </div>
@@ -83,7 +79,9 @@ export default function Home() {
           </h1>
 
           {/* Tagline with Marquee Animation */}
-          <div className={`overflow-hidden max-w-lg mx-auto transition-all duration-1000 delay-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className={`overflow-hidden max-w-2xl mx-auto transition-all duration-1000 delay-700 relative ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            style={{ width: '600px' }}
+          >
             <div
               className="font-inter text-2xl md:text-3xl lg:text-4xl animate-marquee-right whitespace-nowrap"
               style={{

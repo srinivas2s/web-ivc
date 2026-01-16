@@ -82,5 +82,5 @@ body {
 }
 
 .animate-marquee-right {
-  animation: marqueeRight 8s linear infinite;
+  animation: marqueeRight 10s linear infinite;
 }
