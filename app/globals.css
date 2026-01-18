@@ -3,50 +3,50 @@
 @tailwind utilities;
 
 :root {
-  --gradient-start: #F5E6D3;
-  --gradient-mid: #E8D4BF;
-  --gradient-end: #D4BFA8;
-  --text-dark: #2C2C2C;
-  --accent-gold: #F4C430;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  --font-inter: 'Inter', sans-serif;
+  --font-outfit: 'Outfit', sans-serif;
 }
 
 body {
-  font-family: var(--font-inter), sans-serif;
-  color: var(--text-dark);
-  overflow-x: hidden;
+  font-family: var(--font-inter);
+  margin: 0;
+  padding: 0;
 }
 
-/* Custom animations */
+/* Custom Gradient Background */
+.ivc-gradient-bg {
+  background: linear-gradient(135deg,
+      #FFFBF0 0%,
+      /* Very light cream */
+      #FFEFD5 35%,
+      /* Papaya Whip */
+      #FFE5B4 70%,
+      /* Peach */
+      #FFCB9A 100%
+      /* Peach Orange */
+    );
+  /* Fallback color */
+  background-color: #FFFBF0;
+}
+
+/* Logo entrance animation */
 @keyframes logoEntrance {
   0% {
     opacity: 0;
-    transform: scale(0.8) rotate(-10deg);
+    transform: scale(0.8) translateY(-20px);
   }
 
   100% {
     opacity: 1;
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) translateY(0);
   }
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.logo-entrance {
+  animation: logoEntrance 1s ease-out forwards;
 }
 
+/* Floating animation */
 @keyframes float {
 
   0%,
@@ -55,22 +55,15 @@ body {
   }
 
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
 
-.logo-entrance {
-  animation: logoEntrance 1.5s ease-out forwards;
-}
-
-.fade-in-up {
-  animation: fadeInUp 1s ease-out forwards;
-}
-
 .float-animation {
-  animation: float 6s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
+/* Marquee animation - continuous right movement */
 @keyframes marqueeRight {
   0% {
     transform: translateX(-100%);
@@ -82,5 +75,22 @@ body {
 }
 
 .animate-marquee-right {
-  animation: marqueeRight 10s linear infinite;
+  animation: marqueeRight 8s linear infinite;
+}
+
+/* Animation delay utilities */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
 }

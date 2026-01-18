@@ -12,35 +12,35 @@ export default function Home() {
 
   return (
     <main className="min-h-screen relative overflow-hidden">
-      {/* Enhanced Gradient Background with Animation */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#F5E6D3] via-[#E8D4BF] to-[#D4BFA8]"></div>
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#F4C430]/5 via-transparent to-[#DAA520]/10 animate-pulse"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(244,196,48,0.1),transparent_50%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(218,165,32,0.1),transparent_50%)]"></div>
+      {/* Royal Cream Gradient Background - Ivory to Sunset Orange */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FFFEF2] via-[#FFE6A5] to-[#FF9B70]"></div>
 
       {/* Header with partner logos */}
       <header className="absolute top-0 left-0 right-0 z-10 p-6 pointer-events-none">
-        <div className="w-full flex justify-start items-start gap-4">
+        <div className="w-full flex justify-start items-center gap-6">
 
           {/* VVCE Logo */}
           <div className="pointer-events-auto">
             <Image
               src="/vvce-logo.png"
               alt="VVCE Logo"
-              width={120}
-              height={120}
+              width={100}
+              height={100}
               priority
               className="object-contain"
             />
           </div>
+
+          {/* Vertical Line Separator */}
+          <div className="w-[2px] h-16 bg-black/60 pointer-events-none"></div>
 
           {/* Inunity Logo */}
           <div className="pointer-events-auto">
             <Image
               src="/inunity-logo.png"
               alt="Inunity Logo"
-              width={200}
-              height={80}
+              width={180}
+              height={70}
               priority
               className="object-contain"
             />
@@ -57,10 +57,10 @@ export default function Home() {
           <div className={`mb-12 ${mounted ? 'logo-entrance' : 'opacity-0'}`}>
             <div className="float-animation inline-block">
               <Image
-                src="/ivc-logo.png"
+                src="/ivc-main-logo.png"
                 alt="IVC Logo - Innovators and Visionaries Club"
-                width={350}
-                height={350}
+                width={400}
+                height={400}
                 priority
                 className="object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 cursor-pointer"
               />
