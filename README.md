@@ -1,4 +1,4 @@
-# Club Website 🌐
+# Club Website 
 
 This repository contains an initial version of the **Club Website** built using **Next.js**.
 
@@ -6,9 +6,9 @@ The project was started with the intention of creating a full-featured website f
 
 ---
 
-## 🚧 Project Status
+##  Project Status
 
-⏸️ **Paused / Discontinued (for now)**
+**Paused / Discontinued (for now)**
 
 The website remains **basic and incomplete**.  
 This decision was a **personal choice**, not due to technical limitations.
@@ -20,16 +20,16 @@ The codebase is kept here for:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Next.js**
 - **React.js**
 - **Node.js**
-- **CSS / Tailwind CSS** (if applicable)
-
+- **CSS**
+  
 ---
 
-## ✨ Current Implementation
+## Current Implementation
 
 - Basic project structure
 - Initial pages and routing
@@ -38,7 +38,7 @@ The codebase is kept here for:
 
 ---
 
-## ❌ What’s Not Implemented
+## What’s Not Implemented
 
 - Advanced UI/UX
 - Animations or interactions
@@ -47,7 +47,7 @@ The codebase is kept here for:
 
 ---
 
-## 💡 Notes
+## Notes
 
 - This project represents an **early-stage experiment** with Next.js.
 - Development was intentionally stopped based on **personal preference and direction**.
@@ -55,7 +55,7 @@ The codebase is kept here for:
 
 ---
 
-## 🧑‍💻 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
